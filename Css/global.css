@@ -15,7 +15,7 @@
 }
 
 .baloon {
-  background-image: url("/imagens/balloons.png");
+  background-image: url("../imagens/balloons.png");
   background-repeat: no-repeat;
   background-position: top;
   padding-top: 125px;
