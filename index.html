@@ -3,7 +3,12 @@
 	<head>
 		<meta charset="UTF-8">
 
-		<title>Estourando balões</title>
+		<title>Ballon Game</title>
+
+		<link rel="stylesheet" href="./Css/global.css">
+		<link rel="stylesheet" href="./Css/reset.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 
 		<script language='Javascript'>
 
@@ -17,18 +22,21 @@
 	</head>
 
 	<body>
-		<div>
-			<p>
-				<b>Nível: </b>
-				<select id="nivel_jogo">
-					<option value="1">Fácil</option>
-					<option value="2">Normal</option>
-					<option value="3">Difícil</option>
-				</select>
-			</p>
-			<br>
-			<img src="imagens/iniciar.png" onclick="iniciaJogo()">
+		<h1 class="tittle">Balloon Game</h1>
+		<div class="baloon">
+			<div class="home">
+				<div class="items">
+					<img src="imagens/iniciar.png" onclick="iniciaJogo()">
+					<p>
+						<b class="main-text">Nível: </b>
+						<select id="nivel_jogo" class="select">
+							<option value="1">Fácil</option>
+							<option value="2">Normal</option>
+							<option value="3">Difícil</option>
+						</select>
+					</p>
+				</div>
+			</div>
 		</div>
 	</body>
-	
 </html>

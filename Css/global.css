@@ -1,0 +1,71 @@
+.tittle {
+  padding-top: 100px;
+  text-align: center;
+  animation: ease-in-out;
+}
+
+.baloon {
+  background-image: url("/imagens/balloons.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 125px;
+}
+
+.home {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+  border: 5px solid #000;
+  border-radius: 20px;
+  background-color: #d3effb;
+}
+
+.items {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-text {
+  font-family: "Fredoka One", cursive;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.select {
+  font-family: "Fredoka One", cursive;
+}
+
+.select {
+  font-size: 15px;
+  border: 2px solid #000;
+}
+
+/* Game */
+
+.left-hud {
+  float: left;
+  width: auto;
+  height: 500px;
+  background: #fff;
+  border: solid 1px #a2a2a2;
+  margin-right: 5px;
+}
+
+.timer {
+  width: 140px;
+  height: 132px;
+}
+
+.back-animated {
+  float: left;
+  width: 600px;
+  height: 500px;
+  background: url("imagens/cenario.gif");
+  background-repeat: no-repeat;
+  border: solid 2px #000;
+  background-size: cover;
+}
