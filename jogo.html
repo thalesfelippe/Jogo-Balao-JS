@@ -7,6 +7,7 @@
 
 		<script src="jogo.js"></script>
 
+		<link rel="icon" href="./imagens/favicon.png">
 		<link rel="stylesheet" href="./Css/global.css">
 		<link rel="stylesheet" href="./Css/reset.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,42 +16,43 @@
 	</head>
 
 	<body onload="iniciaJogo()">
-		<div class="left-hud">
-			<table>
-				<tr>
-					<td>
-						<img src="imagens/balao_azul_grande.png">
-					</td>
-					<td>
-						<span id="baloes_inteiros" style="font-size: 40px;"></span>
-					</td>
-				</tr>
-			</table>
-
-			<br>
-			<table>
-				<tr>
-					<td>
-						<img src="imagens/balao_azul_grande_estourado.png">
-					</td>
-					<td>
-						<span id="baloes_estourados" style="font-size: 40px;"></span>
-					</td>
-				</tr>
-			</table>
-
-			<br>
-			<table class="timer">
-				<tr>
-					<td style="background: url('imagens/cronometro.png'); text-align: center">
-						<span id="cronometro" style="color: #DA2A47; font-size: 25px;"></span>
-					</td>
-				</tr>
-			</table>
-
-		</div>
-
-		<div class="back-animated" id="cenario" style="float: left; width: 600px; height: 500px; background: url('imagens/cenario.gif'); background-repeat: no-repeat; border: solid 2px #000; background-size: cover;"></div>
+				<div class="left-hud">
+					<table>
+						<tr>
+							<td>
+								<img src="imagens/balao_vermelho_grande.png">
+							</td>
+							<td>
+								<span id="baloes_inteiros" style="font-size: 60px;"></span>
+							</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td>
+								<img src="imagens/balao_vermelho_grande_estourado.png">
+							</td>
+							<td>
+								<span id="baloes_estourados" style="font-size: 60px;"></span>
+							</td>
+						</tr>
+					</table>
+					<table class="timer">
+						<tr>
+							<td class="cronometro">
+								<span class="cronometro -sec" id="cronometro"></span>
+							</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td>
+								<span class="return"></span>
+							</td>
+						</tr>
+					</table>
+				</div>
+			<div class="back-animated" id="cenario"></div>
 	</body>
 	
 </html>

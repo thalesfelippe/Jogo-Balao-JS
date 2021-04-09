@@ -1,4 +1,14 @@
+.bg {
+  background-image: url("../imagens/bg.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .tittle {
+  font-family: "Fredoka One", cursive;
+  font-weight: lighter;
+  color: #2E83F2;
+  text-shadow: 2px 2px 2px #000;
   padding-top: 100px;
   text-align: center;
   animation: ease-in-out;
@@ -16,8 +26,8 @@
   margin-right: auto;
   width: 300px;
   height: 300px;
-  border: 5px solid #000;
-  border-radius: 20px;
+  border: 3px solid #000;
+  border-radius: 30px;
   background-color: #d3effb;
 }
 
@@ -49,22 +59,42 @@
 .left-hud {
   float: left;
   width: auto;
+  padding-top: 100px;
   height: 500px;
-  background: #fff;
-  border: solid 1px #a2a2a2;
+  background: #F2E9D8;
+  border: 2px solid #000;
   margin-right: 5px;
 }
 
 .timer {
-  width: 140px;
-  height: 132px;
+  width: 150px;
+  height: 130px;
+}
+
+.cronometro {
+  background: url("../imagens/cronometro.png");
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cronometro.-sec {
+  font-weight: bolder;
+  color: #03318C;
+  font-size: 25px;
+  margin-left: 25px;
+}
+
+.return {
+  background: url("../imagens/back.png");
+  background-repeat: no-repeat;
 }
 
 .back-animated {
   float: left;
-  width: 600px;
-  height: 500px;
-  background: url("imagens/cenario.gif");
+  width: 750px;
+  height: 600px;
+  background: url("../imagens/cenario.gif");
   background-repeat: no-repeat;
   border: solid 2px #000;
   background-size: cover;
