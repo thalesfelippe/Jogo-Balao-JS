@@ -8,6 +8,11 @@ function iniciaJogo(){
 
 	var tempo_segundos = 0;
 
+	const startMusic = new Audio ('./sons/start.mp3');
+
+	startMusic.volume = 0.5;
+	startMusic.play();
+
 	if(nivel_jogo == 1) {
 		tempo_segundos = 120;
 
@@ -54,8 +59,10 @@ function contagem_tempo(segundos){
 }
 
 function gamer_over(){
-	losesom.play();
-	alert('Fim De Jogo')
+	const startMusic = new Audio ('./sons/Losegame.mp3');
+	
+	startMusic.play();
+	setTimeout(function(){alert('Fim De Jogo')},500);
 }
 
 function cria_baloes(qtde_baloes){
@@ -76,6 +83,11 @@ function cria_baloes(qtde_baloes){
 function estourar(e){
 
 	var id_balao = e.id;
+
+	const startMusic = new Audio ('./sons/Balloon.mp3');
+
+	startMusic.volume = 0.5;
+	startMusic.play();
 
 	document.getElementById(id_balao).setAttribute("onclick", "")
 	document.getElementById(id_balao).src = 'imagens/balao_vermelho_pequeno_estourado.png'
@@ -102,8 +114,10 @@ function pontuacao(acao){
 
 function situacao_jogo(baloes_inteiros, baloes_estourados){
 	if(baloes_inteiros == 0){
-		winsom.play();
-		alert('Win');
+		const startMusic = new Audio ('./sons/Wingame.mp3');
+	
+		startMusic.play();
+		setTimeout(function(){alert('Win')},500);
 		parar_jogo();
 	}
 }
